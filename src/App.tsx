@@ -7,7 +7,7 @@ const App: React.FC = () => {
     <div className="w-full min-h-screen flex flex-col">
       {/* Navbar */}
       <nav className="w-full relative bg-[#25252E] flex justify-end items-center pr-16 py-4">
-        <div className="absolute left-40" >
+        <div className="absolute left-40">
           <SidekickLogo />
         </div>
         <div className="space-x-6 hidden md:flex">

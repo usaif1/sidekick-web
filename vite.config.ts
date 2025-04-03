@@ -5,12 +5,5 @@ import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-    svgr({
-      // Optional: Enable if you want CRA-style imports
-      include: "**/*.svg?react",
-    }),
-  ],
+  plugins: [react(), tailwindcss(), svgr()],
 });
