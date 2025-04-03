@@ -43,7 +43,7 @@ const App: React.FC = () => {
               SideKick!
             </h2>
           </div>
-          <button className="mt-4 bg-[#18F27A] text-black px-6 py-3 rounded-full">
+          <button className="mt-4 bg-[#18F27A] text-black px-6 py-3 rounded-full cursor-pointer">
             Partner with Us
           </button>
         </div>
@@ -52,7 +52,7 @@ const App: React.FC = () => {
 
       {/* Why Partner Section */}
       <section className="py-16 px-8 text-center bg-white text-black">
-        <h3 className="text-2xl font-bold cursor-pointer">
+        <h3 className="text-2xl font-bold">
           Why Partner With Us?
         </h3>
         <div className="flex flex-wrap justify-center mt-8 gap-8">
@@ -78,7 +78,7 @@ const App: React.FC = () => {
       </section>
 
       {/* Footer Section */}
-      <footer className="w-full bg-black text-center py-12 px-6">
+      <footer className="w-full bg-[#25252E] text-center py-12 px-6">
         <h3 className="text-2xl font-bold text-green-400">
           Ride Smooth. Ride Worry-Free.
         </h3>
