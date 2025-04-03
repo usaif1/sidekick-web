@@ -1,6 +1,9 @@
 import React from "react";
 import BG2 from "./assets/bg-2.png";
 import SidekickLogo from "./assets/sidekicklogo.svg?react";
+import SAAS from "./assets/SAAS.svg?react";
+import Mobility from "./assets/mobility.svg?react";
+import Control from "./assets/control.svg?react";
 
 const App: React.FC = () => {
   return (
@@ -31,7 +34,7 @@ const App: React.FC = () => {
 
       {/* Hero Section */}
       <section className="relative w-full h-[70vh] xl:h-[90vh] flex flex-col justify-center items-start p-6 bg-[url('./assets/bg-1.png')] bg-cover">
-        <div className="pl-10 xl:pl-40 2xl:pl-100">
+        <div className="pl-10 xl:pl-40 2xl:pl-80">
           <div>
             <h2 className="text-5xl xl:text-6xl font-bold text-[#18F27A]">
               Let us be your
@@ -48,16 +51,18 @@ const App: React.FC = () => {
       </section>
 
       {/* Why Partner Section */}
-      <section className="py-16 px-8 text-center">
-        <h3 className="text-2xl font-bold">Why Partner With Us?</h3>
+      <section className="py-16 px-8 text-center bg-white text-black">
+        <h3 className="text-2xl font-bold cursor-pointer">
+          Why Partner With Us?
+        </h3>
         <div className="flex flex-wrap justify-center mt-8 gap-8">
           <div className="w-64 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-300 rounded-lg"></div>
+            <SAAS />
             <h4 className="text-lg font-semibold mt-4">SAAS</h4>
             <p>Scooter as a service</p>
           </div>
           <div className="w-64 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-300 rounded-lg"></div>
+            <Mobility />
             <h4 className="text-lg font-semibold mt-4">Enhanced Mobility</h4>
             <p>
               Provide reliable, hassle-free rides that boost productivity and
@@ -65,7 +70,7 @@ const App: React.FC = () => {
             </p>
           </div>
           <div className="w-64 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-300 rounded-lg"></div>
+            <Control />
             <h4 className="text-lg font-semibold mt-4">Centralized Control</h4>
             <p>Manage all your transportation needs in one place</p>
           </div>
