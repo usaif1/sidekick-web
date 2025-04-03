@@ -30,7 +30,7 @@ const App: React.FC = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative w-full h-[100vh] xl:h-[90vh] flex flex-col justify-center items-start p-6 bg-[url('./assets/bg-1.png')] bg-cover">
+      <section className="relative w-full h-[70vh] xl:h-[90vh] flex flex-col justify-center items-start p-6 bg-[url('./assets/bg-1.png')] bg-cover">
         <div className="pl-10 xl:pl-40 2xl:pl-100">
           <div>
             <h2 className="text-5xl xl:text-6xl font-bold text-[#18F27A]">
@@ -44,7 +44,7 @@ const App: React.FC = () => {
             Partner with Us
           </button>
         </div>
-        <img src={BG2} className="absolute right-0 bottom-0" />
+        <img src={BG2} className="absolute w-[70%] xl:w-fit right-0 bottom-0" />
       </section>
 
       {/* Why Partner Section */}
