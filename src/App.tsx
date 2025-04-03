@@ -56,7 +56,10 @@ const App: React.FC = () => {
             Partner with Us
           </button>
         </div>
-        <img src={BG2} className="absolute w-[70%] xl:w-fit right-0 bottom-0" />
+        <img
+          src={BG2}
+          className="absolute xs:max-h-[60%] h-full right-0 bottom-0"
+        />
       </section>
 
       {/* Why Partner Section */}
