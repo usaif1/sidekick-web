@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import BG2 from "./assets/bg-2.png";
 import SidekickLogo from "./assets/sidekicklogo.svg?react";
 import SAAS from "./assets/SAAS.svg?react";
 import Mobility from "./assets/mobility.svg?react";
 import Control from "./assets/control.svg?react";
+import PartnerForm from "./PartnerForm";
 
 const App: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <div className="w-full min-h-screen flex flex-col">
       {/* Navbar */}
@@ -43,7 +47,12 @@ const App: React.FC = () => {
               SideKick!
             </h2>
           </div>
-          <button className="mt-4 bg-[#18F27A] text-black px-6 py-3 rounded-full cursor-pointer">
+          <button
+            onClick={() => {
+              setIsOpen(true);
+            }}
+            className="mt-4 bg-[#18F27A] text-black px-6 py-3 rounded-full cursor-pointer"
+          >
             Partner with Us
           </button>
         </div>
@@ -52,9 +61,7 @@ const App: React.FC = () => {
 
       {/* Why Partner Section */}
       <section className="py-16 px-8 text-center bg-white text-black">
-        <h3 className="text-2xl font-bold">
-          Why Partner With Us?
-        </h3>
+        <h3 className="text-2xl font-bold">Why Partner With Us?</h3>
         <div className="flex flex-wrap justify-center mt-8 gap-8">
           <div className="w-64 flex flex-col items-center">
             <SAAS />
@@ -79,17 +86,39 @@ const App: React.FC = () => {
 
       {/* Footer Section */}
       <footer className="w-full bg-[#25252E] text-center py-12 px-6">
-        <h3 className="text-2xl font-bold text-green-400">
+        <h3 className="text-2xl font-bold text-[#18F27A]">
           Ride Smooth. Ride Worry-Free.
         </h3>
         <p className="mt-4">
           With SideKick, you're never stuck. If you need help, we're here -
           fast, efficient, and always ready.
         </p>
-        <button className="mt-6 bg-green-500 px-6 py-3 rounded-lg">
+        <button className="mt-6 bg-[#18F27A] px-6 py-3 rounded-lg text-black">
           Get the App
         </button>
       </footer>
+
+      <Modal
+        isOpen={isOpen}
+        shouldCloseOnOverlayClick={false}
+        style={{
+          content: {
+            maxHeight: "80vh",
+            height: "fit-content",
+            alignSelf: "center",
+            borderColor: "#787878",
+            background: "#ffffff",
+            width: "fit-content",
+            margin: "auto",
+          },
+          overlay: {
+            zIndex: 99,
+            background: "rgba(24,24,27,0.52)",
+          },
+        }}
+      >
+        <PartnerForm closeModal={() => setIsOpen(false)} />
+      </Modal>
     </div>
   );
 };
