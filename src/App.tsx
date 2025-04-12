@@ -1,15 +1,33 @@
 import React from "react";
 import { Routes, Route } from "react-router";
 
-// components
-import IndexElement from "./IndexElement";
-import Policy from "./Policy";
+// Layout
+import MainLayout from "./layouts/MainLayout";
+
+// Pages
+import Home from "./pages/Home";
+import Product from "./pages/Product";
+import Offerings from "./pages/Offerings";
+import InstitutionLogin from "./pages/InstitutionLogin";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound"; // optional 404 page
 
 const App: React.FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<IndexElement />} />
-      <Route path="/policy" element={<Policy />} />
+      {/* Routes using MainLayout */}
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/offerings" element={<Offerings />} />
+        <Route path="/contact" element={<Contact />} />
+      </Route>
+
+      {/* Standalone routes without layout */}
+      <Route path="/login" element={<InstitutionLogin />} />
+
+      {/* Optional 404 fallback */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
