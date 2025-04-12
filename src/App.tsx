@@ -21,10 +21,9 @@ const App: React.FC = () => {
         <Route path="/product" element={<Product />} />
         <Route path="/offerings" element={<Offerings />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<InstitutionLogin />} />
       </Route>
 
-      {/* Standalone routes without layout */}
-      <Route path="/login" element={<InstitutionLogin />} />
 
       {/* Optional 404 fallback */}
       <Route path="*" element={<NotFound />} />
