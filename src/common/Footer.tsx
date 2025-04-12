@@ -3,7 +3,7 @@ import SidekickLogo from '../assets/sidekicklogo.svg'
 
 const Footer = () => {
   return (
-    <footer className='bg-[#25252E] py-16'>
+    <footer className='bg-[#25252E] pt-12 py-10'>
       <div className="flex items-center justify-between w-[80%] max-w-7xl mx-auto text-[#f5f5f5]">
         <div className='space-y-8'>
           <img src={SidekickLogo} alt="Sidekick Logo" className='max-w-52' />
@@ -12,7 +12,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className='flex gap-6 py-4'>
+        <div className='flex gap-6'>
           <div className='flex flex-col gap-3'>
             <Link to='/offerings' className='font-normal hover:underline'>Offerings</Link>
             <Link to='/product' className='font-normal hover:underline'>Our Product</Link>
