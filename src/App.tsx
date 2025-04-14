@@ -1,6 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router";
 
+// Modal
+import GlobalModal from "./components/GlobalModal";
+
 // Layout
 import MainLayout from "./layouts/MainLayout";
 
@@ -14,20 +17,24 @@ import NotFound from "./pages/NotFound"; // optional 404 page
 
 const App: React.FC = () => {
   return (
-    <Routes>
-      {/* Routes using MainLayout */}
-      <Route element={<MainLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/offerings" element={<Offerings />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<InstitutionLogin />} />
-      </Route>
+    <>
+      <Routes>
+        {/* Routes using MainLayout */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/offerings" element={<Offerings />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<InstitutionLogin />} />
+        </Route>
 
 
-      {/* Optional 404 fallback */}
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+        {/* Optional 404 fallback */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <GlobalModal />
+
+    </>
   );
 };
 

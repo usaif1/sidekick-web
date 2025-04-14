@@ -6,8 +6,11 @@ import offeringIcon2 from "../assets/offerings/offering2.png"
 import offeringIcon3 from "../assets/offerings/offering3.png"
 import CTABanner from "../common/CTABanner"
 
+import { useModalStore } from "../globalStore/modalStore"
 
 const Offerings = () => {
+  const { openModal } = useModalStore();
+
   return (
     <>
       <div className="flex flex-col grow items-stretch justify-center min-h-svh">
@@ -69,11 +72,14 @@ const Offerings = () => {
 
         <div className="space-y-10 pt-6">
           <h3 className="text-center text-xl">We shorten the kicks between your travel spots, let&#39;s do this together</h3>
-          <button className=" font-medium text-lg bg-[#18F27A] mx-auto block px-7 py-3 rounded-full" >
+          <button
+            className="font-medium text-lg bg-[#18F27A] mx-auto block px-7 py-3 rounded-full"
+            onClick={() => openModal("partnerForm")}
+          >
             Partner With Us
           </button>
         </div>
-      </section>
+      </section >
 
       <CTABanner />
     </>
