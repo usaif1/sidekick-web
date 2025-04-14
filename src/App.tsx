@@ -15,6 +15,11 @@ import InstitutionLogin from "./pages/InstitutionLogin";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound"; // optional 404 page
 
+// TnC  and Privacy Policy\
+import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+
+
 const App: React.FC = () => {
   return (
     <>
@@ -26,6 +31,9 @@ const App: React.FC = () => {
           <Route path="/offerings" element={<Offerings />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<InstitutionLogin />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+
         </Route>
 
 

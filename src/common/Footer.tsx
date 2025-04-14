@@ -20,8 +20,8 @@ const Footer = () => {
             <Link to='/login' className='font-normal hover:underline'>Institution Login</Link>
           </div>
           <div className='flex flex-col gap-3'>
-            <Link to='/contact' className='font-normal hover:underline'>Privacy Policy</Link>
-            <Link to='/login' className='font-normal hover:underline'>Terms and Conditions</Link>
+            <Link to='/privacy-policy' className='font-normal hover:underline'>Privacy Policy</Link>
+            <Link to='/terms' className='font-normal hover:underline'>Terms and Conditions</Link>
           </div>
         </div>
       </div>
