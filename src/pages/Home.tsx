@@ -2,6 +2,7 @@ import Hero from "../assets/home-hero.jpeg";
 import zigzagUnderline from "../assets/zigzag.svg"
 import CTABanner from "../common/CTABanner";
 import SidekickUsageSteps from "../components/SidekickUsageSteps";
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 const Home = () => {
   return (
@@ -35,7 +36,7 @@ const Home = () => {
 
       {/* Blue Section text */}
       <section className="space-y-12 relative max-w-7xl mx-auto  py-12">
-        <h3 className="text-[#296AEB] text-3xl italic py-6 text-center tracking-wide">
+        <h3 className="text-[#296AEB] text-3xl  py-6 text-center tracking-wide">
           We want you to make the most of every moment. Let Sidekick<br /> handle the last mile so you can focus on what really matters.
         </h3>
 
@@ -47,6 +48,7 @@ const Home = () => {
         <SidekickUsageSteps />
       </section>
 
+      <TestimonialCarousel />
       <CTABanner />
 
     </>

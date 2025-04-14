@@ -11,7 +11,7 @@ const Navbar = () => {
           <Link to='/offerings' className='font-semibold hover:underline'>Offerings</Link>
           <Link to='/contact' className='font-semibold hover:underline'>Contact Us</Link>
           <Link to='/login' className='font-semibold hover:underline'>Institution Login</Link>
-          <a href="#" className='bg-[#18F27A] py-2.5 px-3.5 rounded-full text-[#2C2E49] font-semibold'>Get the App</a>
+          <a href="#" className='bg-[#18F27A] py-3 px-3.5 rounded-full text-[#2C2E49] font-semibold'>Get the App</a>
         </div>
       </div>
     </nav>
