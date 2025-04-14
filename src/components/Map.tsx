@@ -16,13 +16,13 @@ const Map = () => {
         </div>
         {/* Quick Location Buttons */}
         <div className="flex items-center gap-4 justify-center mx-auto">
-          <button className="bg-[#296AEB] px-5 py-3 text-sm rounded-2xl text-white font-medium">
+          <button className="bg-sidekick-blue px-5 py-3 text-sm rounded-2xl text-white font-medium">
             Bangalore
           </button>
-          <button className="bg-[#296AEB] px-5 py-3 text-sm rounded-2xl text-white font-medium">
+          <button className="bg-sidekick-blue px-5 py-3 text-sm rounded-2xl text-white font-medium">
             Hyderabad
           </button>
-          <button className="bg-[#296AEB] px-5 py-3 text-sm rounded-2xl text-white font-medium">
+          <button className="bg-sidekick-blue px-5 py-3 text-sm rounded-2xl text-white font-medium">
             New Delhi
           </button>
         </div>

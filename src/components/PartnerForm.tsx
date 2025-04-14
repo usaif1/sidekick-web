@@ -3,9 +3,9 @@ import Logo from "../assets/sidekick3Dlogo.svg"
 
 export default function PartnerForm({ onClose }: { onClose: () => void }) {
   return (
-    <div className="relative max-w-xl rounded-xl overflow-hidden border border-blue-500">
+    <div className="relative max-w-xl rounded-xl overflow-hidden">
       {/* Header Section */}
-      <div className="bg-[#00FF84] py-6 px-4 relative space-y-2">
+      <div className="bg-sidekick-green py-6 px-4 relative space-y-2">
         <button
           onClick={onClose}
           className="ml-auto block mr-2 text-zinc-700 hover:text-zinc-900 z-10 mt-1"
@@ -24,7 +24,7 @@ export default function PartnerForm({ onClose }: { onClose: () => void }) {
 
         <form className="space-y-4">
           <div>
-            <label className="text-sm font-semibold text-blue-600 pb-2 block ml-4">Name</label>
+            <label className="text-sm font-semibold text-sidekick-blue pb-2 block ml-4">Name</label>
             <input
               type="text"
               placeholder="XXXX"
@@ -33,7 +33,7 @@ export default function PartnerForm({ onClose }: { onClose: () => void }) {
           </div>
 
           <div>
-            <label className="text-sm font-semibold text-blue-600 pb-2 block ml-4">Institution Name</label>
+            <label className="text-sm font-semibold text-sidekick-blue pb-2 block ml-4">Institution Name</label>
             <input
               type="text"
               placeholder="XXXX"
@@ -43,7 +43,7 @@ export default function PartnerForm({ onClose }: { onClose: () => void }) {
 
           <div className="flex gap-4">
             <div className="flex-1">
-              <label className="text-sm font-semibold text-blue-600 pb-2 block ml-4">Email Address</label>
+              <label className="text-sm font-semibold text-sidekick-blue pb-2 block ml-4">Email Address</label>
               <input
                 type="email"
                 placeholder="XXXX"
@@ -52,7 +52,7 @@ export default function PartnerForm({ onClose }: { onClose: () => void }) {
             </div>
 
             <div className="flex-1">
-              <label className="text-sm font-semibold text-blue-600 pb-2 block ml-4">Phone Number</label>
+              <label className="text-sm font-semibold text-sidekick-blue pb-2 block ml-4">Phone Number</label>
               <input
                 type="text"
                 placeholder="XXXX"

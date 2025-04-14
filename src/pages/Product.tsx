@@ -29,7 +29,7 @@ const Product = () => {
               Built for the Streets,<br />
               the ride you always needed.
             </p>
-            <a className="font-medium mx-auto block w-max text-lg bg-[#18F27A] px-7 py-3 rounded-full" href="#">
+            <a className="font-medium mx-auto block w-max text-lg bg-sidekick-green px-7 py-3 rounded-full" href="#">
               Get the App
             </a>
           </div>
@@ -60,7 +60,7 @@ const Product = () => {
 
       {/* Upcoming products */}
       <section className="max-w-7xl w-[80vw] mx-auto py-16 my-16">
-        <h2 className="text-center text-4xl font-bold z-10 text-[#296AEB]">Upcoming Products</h2>
+        <h2 className="text-center text-4xl font-bold z-10 text-sidekick-blue">Upcoming Products</h2>
 
         <div className="flex items-center justify-center gap-10 my-8 py-6">
           <img src={Upcomging1Img} alt="Upcoming Scooter" />

@@ -3,11 +3,11 @@ import SidekickLogo from '../assets/sidekicklogo.svg'
 
 const Footer = () => {
   return (
-    <footer className='bg-[#25252E] pt-12 py-10'>
+    <footer className='bg-sidekick-black pt-12 py-10'>
       <div className="flex items-center justify-between w-[80%] max-w-7xl mx-auto text-[#f5f5f5]">
         <div className='space-y-8'>
           <img src={SidekickLogo} alt="Sidekick Logo" className='max-w-52' />
-          <p className='font-semibold text-lg tracking-wide text-[#18F27A] leading-tight'>
+          <p className='font-semibold text-lg tracking-wide text-sidekick-green leading-tight'>
             From A to B, we’ve got the in<br />-between.
           </p>
         </div>

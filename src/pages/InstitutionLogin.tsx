@@ -25,11 +25,11 @@ const InstitutionLogin = () => {
           <img src={HeroForegroundImg} alt="Sidekick App Screenshot" className="h-[85vh] w-[55%] object-contain absolute object-bottom bottom-0 right-32" />
           {/* Text Content  + CTA */}
           <div className="space-y-12 relative max-w-7xl mx-auto w-[80vw] z-10">
-            <p className="text-5xl w-1/2 text-[#18F27A] font-semibold leading-snug drop-shadow-md">
+            <p className="text-5xl w-1/2 text-sidekick-green font-semibold leading-snug drop-shadow-md">
               Let us be your<br />
               Sidekick!
             </p>
-            <button className="font-medium text-lg bg-[#18F27A] px-8 py-3 rounded-full">
+            <button className="font-medium text-lg bg-sidekick-green px-8 py-3 rounded-full">
               Institution Log In
             </button>
           </div>

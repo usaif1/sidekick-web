@@ -20,7 +20,7 @@ const SidekickUsageSteps = () => {
   }, [])
 
   return (
-    <div className="relative max-w-7xl w-[80vw] mx-auto bg-[#18F27A] rounded-xl">
+    <div className="relative max-w-7xl w-[80vw] mx-auto bg-sidekick-green rounded-xl">
       {isReady && (
         <Swiper
           modules={[Navigation]}
@@ -40,7 +40,7 @@ const SidekickUsageSteps = () => {
           <SwiperSlide>
             <div className=" max-h-[60vh] relative flex items-center px-12">
               <div className='bg-white w-1/2 space-y-4 px-6 py-8 relative rounded-xl'>
-                <h6 className='font-semibold text-[#296AEB]'>Step 1</h6>
+                <h6 className='font-semibold text-sidekick-blue'>Step 1</h6>
                 <p className='text-4xl font-semibold'>Let's hit the Streets</p>
               </div>
               <img src={slide1Img} alt="person riding Sidekick" className='relative ml-auto' />
@@ -50,7 +50,7 @@ const SidekickUsageSteps = () => {
           <SwiperSlide>
             <div className="max-h-[60vh] relative flex items-center px-12">
               <div className='bg-white w-1/2 space-y-4 px-6 py-8 relative rounded-xl'>
-                <h6 className='font-semibold text-[#296AEB]'>Step 2</h6>
+                <h6 className='font-semibold text-sidekick-blue'>Step 2</h6>
                 <p className='text-4xl font-semibold'>Fold. Lift. You're good to go</p>
               </div>
               <img src={slide2Img} alt="person holding Sidekick" className='relative ml-auto' />
@@ -60,7 +60,7 @@ const SidekickUsageSteps = () => {
           <SwiperSlide>
             <div className=" max-h-[60vh] relative flex items-center px-12 pr-0">
               <div className='bg-white w-1/2 space-y-4 px-6 py-8 relative rounded-xl'>
-                <h6 className='font-semibold text-[#296AEB]'>Step 3</h6>
+                <h6 className='font-semibold text-sidekick-blue'>Step 3</h6>
                 <p className='text-4xl font-semibold'>Freedom fits in your boot</p>
               </div>
               <img src={slide3Img} alt="Sidekick in Car" className='relative ml-auto top-4' />
@@ -71,10 +71,10 @@ const SidekickUsageSteps = () => {
 
       {/* Navigation Buttons */}
       <div className="absolute w-full z-20 flex justify-between mt-4 px-10 bottom-6 pb-4">
-        <button ref={prevRef} className="cursor-pointer px-16 bg-[#18F27A] py-3 border-2 rounded-lg border-white">
+        <button ref={prevRef} className="cursor-pointer px-16 bg-sidekick-green py-3 border-2 rounded-lg border-white">
           <ArrowLeft size={24} />
         </button>
-        <button ref={nextRef} className="cursor-pointer px-16 bg-[#18F27A] py-3 border-2 rounded-lg border-white">
+        <button ref={nextRef} className="cursor-pointer px-16 bg-sidekick-green py-3 border-2 rounded-lg border-white">
           <ArrowRight size={24} />
         </button>
       </div>

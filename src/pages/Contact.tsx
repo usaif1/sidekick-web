@@ -11,17 +11,17 @@ import FAQ from "../components/FAQ"
 const Contact = () => {
   return (
     <>
-      <div className="pt-20 bg-[#18F27A]">
+      <div className="pt-20 bg-sidekick-green">
         <div className="py-16 flex items-center justify-between max-w-7xl mx-auto w-[80vw]">
           <h2 className="text-6xl font-semibold text-gray-800 tracking-tight">Contact Us</h2>
-          <ArrowDown size={36} className="text-white bg-[#296AEB] w-20 h-20 p-4 rounded-full" />
+          <ArrowDown size={36} className="text-white bg-sidekick-blue w-20 h-20 p-4 rounded-full" />
         </div>
       </div>
 
 
       {/* Blue Section text */}
       <section className="space-y-12 relative max-w-7xl mx-auto  py-12">
-        <h3 className="text-[#296AEB] text-3xl  py-6 text-center tracking-wide">
+        <h3 className="text-sidekick-blue text-3xl  py-6 text-center tracking-wide">
           We know you move fast,<br />
           and so should your support.
         </h3>
@@ -57,7 +57,7 @@ const Contact = () => {
       </section>
 
       {/* CTA SECTION */}
-      <section className="bg-[#18F27A] text-gray-900">
+      <section className="bg-sidekick-green text-gray-900">
         <div className="py-10 max-w-7xl mx-auto w-[80vw] flex items-center ">
           <div className="space-y-2">
             <h6 className="text-xl font-semibold">

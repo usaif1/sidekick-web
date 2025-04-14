@@ -59,7 +59,7 @@ export default function TestimonialCarousel() {
                 <div className="flex-1 flex flex-col justify-between px-4 py-10 pr-10">
                   <p className="text-4xl leading-tight text-gray-800">“{t.quote}”</p>
                   <div className='flex items-end justify-between'>
-                    <div className='text-[#296AEB]'>
+                    <div className='text-sidekick-blue'>
                       <p className="font-semibold text-3xl">{t.name}</p>
                       <p className="text-lg">{t.company}</p>
                     </div>
@@ -80,7 +80,7 @@ export default function TestimonialCarousel() {
         <div className='flex items-center justify-between w-full py-6 mt-4'>
           <div className="">
             <button
-              className="bg-[#18F27A] p-4 rounded-xl"
+              className="bg-sidekick-green p-4 rounded-xl"
               onClick={() => swiperRef.current?.slidePrev()}
             >
               <ArrowLeft size={24} className='text-black font-bold' />
@@ -88,7 +88,7 @@ export default function TestimonialCarousel() {
           </div>
           <div className="">
             <button
-              className="bg-[#18F27A] p-4 rounded-xl"
+              className="bg-sidekick-green p-4 rounded-xl"
               onClick={() => swiperRef.current?.slideNext()}
             >
               <ArrowRight size={24} className='text-black font-bold' />

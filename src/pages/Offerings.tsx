@@ -31,7 +31,7 @@ const Offerings = () => {
               Now we Go, because< br />
               every second counts.
             </p>
-            <a className="font-medium text-lg bg-[#18F27A] px-4 py-3 rounded-full" href="#">
+            <a className="font-medium text-lg bg-sidekick-green px-5 py-3 rounded-full" href="#">
               Get the App
             </a>
           </div>
@@ -39,7 +39,7 @@ const Offerings = () => {
       </div>
 
       <section className="space-y-12 relative max-w-7xl mx-auto py-12 mb-16 mt-10">
-        <h3 className="text-[#296AEB] text-3xl  py-6 text-center tracking-wide">
+        <h3 className="text-sidekick-blue text-3xl  py-6 text-center tracking-wide">
           From city streets to campus corridors and business fleets,<br />
           we redefine how you cover the final leg of your journey.
         </h3>
@@ -51,19 +51,19 @@ const Offerings = () => {
         {/* Offering Cards */}
         <div className="grid grid-cols-3 gap-6 place-content-center pb-10">
           <button className="cursor-pointer" onClick={() => console.log("Show the offering")}>
-            <div className="rounded-lg border-2 space-y-2 border-[#18F27A] hover:bg-[#18F27A]  p-10 w-full max-w-sm mx-auto">
+            <div className="rounded-lg border-2 space-y-2 border-sidekick-green hover:bg-sidekick-green  p-10 w-full max-w-sm mx-auto">
               <img src={offeringIcon1} alt="Cities and Campuses" className="mx-auto" />
               <h6 className="text-lg text-center">Cities and Campuses</h6>
             </div>
           </button>
           <button className="cursor-pointer" onClick={() => console.log("Show the offering")}>
-            <div className="rounded-lg border-2 space-y-2 border-[#18F27A] hover:bg-[#18F27A]  p-10 w-full max-w-sm mx-auto ">
+            <div className="rounded-lg border-2 space-y-2 border-sidekick-green hover:bg-sidekick-green  p-10 w-full max-w-sm mx-auto ">
               <img src={offeringIcon2} alt="Warehouses" className="mx-auto" />
               <h6 className="text-lg text-center">Warehouses</h6>
             </div>
           </button>
           <button className="cursor-pointer" onClick={() => console.log("Show the offering")}>
-            <div className="rounded-lg border-2 space-y-2 border-[#18F27A] hover:bg-[#18F27A]  p-10 w-full max-w-sm mx-auto ">
+            <div className="rounded-lg border-2 space-y-2 border-sidekick-green hover:bg-sidekick-green  p-10 w-full max-w-sm mx-auto ">
               <img src={offeringIcon3} alt="Drivers" className="mx-auto" />
               <h6 className="text-lg text-center">Drivers</h6>
             </div>
@@ -73,7 +73,7 @@ const Offerings = () => {
         <div className="space-y-10 pt-6">
           <h3 className="text-center text-xl">We shorten the kicks between your travel spots, let&#39;s do this together</h3>
           <button
-            className="font-medium text-lg bg-[#18F27A] mx-auto block px-7 py-3 rounded-full"
+            className="font-medium text-lg bg-sidekick-green mx-auto block px-7 py-3 rounded-full"
             onClick={() => openModal("partnerForm")}
           >
             Partner With Us

@@ -39,7 +39,7 @@ export default function FoldedScooterInfo() {
             <div className="w-5 h-5 bg-blue-600 rounded-full cursor-pointer transition-all duration-200 group-hover:scale-110 shadow-lg border-2 border-white" />
 
             {/* Tooltip - shown only when point is hovered */}
-            <div className="absolute left-6 top-1/2 -translate-y-1/2 bg-[#296AEB] text-white font-medium px-3 py-3 rounded-xl text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 w-max max-w-xs pointer-events-none">
+            <div className="absolute left-6 top-1/2 -translate-y-1/2 bg-sidekick-blue text-white font-medium px-3 py-3 rounded-xl text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 w-max max-w-xs pointer-events-none">
               {point.content}
             </div>
           </div>

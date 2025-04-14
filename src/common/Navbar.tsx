@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${isContactPage ? 'bg-[#18F27A] text-black' : 'bg-[#25252E] text-[#f5f5f5]'
+      className={`${isContactPage ? 'bg-sidekick-green text-black' : 'bg-sidekick-black text-[#f5f5f5]'
         } py-7 absolute top-0 left-0 w-full h-fit z-20`}
     >
       <div className='flex items-center justify-between w-[80%] max-w-7xl mx-auto'>
@@ -23,9 +23,9 @@ const Navbar = () => {
           <Link to='/login' className='font-semibold hover:underline'>Institution Login</Link>
           <a
             href="#"
-            className={`py-3 px-3.5 rounded-full font-semibold ${isContactPage
+            className={`py-3 px-4 rounded-full font-semibold ${isContactPage
               ? 'bg-white text-black'
-              : 'bg-[#18F27A] text-[#2C2E49]'
+              : 'bg-sidekick-green text-[#2C2E49]'
               }`}
           >
             Get the App

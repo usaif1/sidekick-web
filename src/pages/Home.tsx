@@ -27,7 +27,7 @@ const Home = () => {
               we have a fleet to keep <br />
               you moving.
             </p>
-            <a className="font-medium text-lg bg-[#18F27A] px-4 py-3 rounded-full" href="#">
+            <a className="font-medium text-lg bg-sidekick-green px-5 py-3 rounded-full" href="#">
               Get the App
             </a>
           </div>
@@ -36,7 +36,7 @@ const Home = () => {
 
       {/* Blue Section text */}
       <section className="space-y-12 relative max-w-7xl mx-auto  py-12">
-        <h3 className="text-[#296AEB] text-3xl  py-6 text-center tracking-wide">
+        <h3 className="text-sidekick-blue text-3xl  py-6 text-center tracking-wide">
           We want you to make the most of every moment. Let Sidekick<br /> handle the last mile so you can focus on what really matters.
         </h3>
 
