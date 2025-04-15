@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-type ModalType = "partnerForm" | null;
+type ModalType = "partnerForm" | "citiesAndCampuses" | "warehousesAndIndustrialZones" | "driversAndFleets" | null;
 
 interface ModalState {
   modalType: ModalType;

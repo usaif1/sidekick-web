@@ -50,19 +50,21 @@ const Offerings = () => {
         </div>
         {/* Offering Cards */}
         <div className="grid grid-cols-3 gap-6 place-content-center pb-10">
-          <button className="cursor-pointer" onClick={() => console.log("Show the offering")}>
+          <button className="cursor-pointer"
+            onClick={() => openModal("citiesAndCampuses")}
+          >
             <div className="rounded-lg border-2 space-y-2 border-sidekick-green hover:bg-sidekick-green  p-10 w-full max-w-sm mx-auto">
               <img src={offeringIcon1} alt="Cities and Campuses" className="mx-auto" />
               <h6 className="text-lg text-center">Cities and Campuses</h6>
             </div>
           </button>
-          <button className="cursor-pointer" onClick={() => console.log("Show the offering")}>
+          <button className="cursor-pointer" onClick={() => openModal("warehousesAndIndustrialZones")}>
             <div className="rounded-lg border-2 space-y-2 border-sidekick-green hover:bg-sidekick-green  p-10 w-full max-w-sm mx-auto ">
               <img src={offeringIcon2} alt="Warehouses" className="mx-auto" />
               <h6 className="text-lg text-center">Warehouses</h6>
             </div>
           </button>
-          <button className="cursor-pointer" onClick={() => console.log("Show the offering")}>
+          <button className="cursor-pointer" onClick={() => openModal("driversAndFleets")}>
             <div className="rounded-lg border-2 space-y-2 border-sidekick-green hover:bg-sidekick-green  p-10 w-full max-w-sm mx-auto ">
               <img src={offeringIcon3} alt="Drivers" className="mx-auto" />
               <h6 className="text-lg text-center">Drivers</h6>
