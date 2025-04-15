@@ -12,9 +12,10 @@ const points: Point[] = [
     id: 1,
     top: '70%',
     left: '40%',
-    content: 'This is point 1 - cool feature here!',
+    content: 'Ready to be carried around or fit into your car’s boot, Unfold and Go',
   },
 ];
+
 
 export default function FoldedScooterInfo() {
   return (

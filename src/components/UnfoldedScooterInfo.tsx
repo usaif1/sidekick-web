@@ -1,5 +1,6 @@
 import unFoldedScooterImg from "../assets/product/unfolded.png"
 
+
 type Point = {
   id: number;
   top: string;
@@ -7,12 +8,20 @@ type Point = {
   content: string;
 };
 
+
+/*
+Battery, 50km IDC on a single charge
+Aircraft grade Aluminium body
+Regenerative electronic braking 
+Triple Spring Suspension at front & Underbelly Double Spring Suspension at rear
+ */
+
 const points: Point[] = [
-  { id: 1, top: '10%', left: '16%', content: 'This is point 1 - cool feature here!' },
-  { id: 2, top: '45%', left: '11%', content: 'This is point 2 - cool feature here!' },
-  { id: 3, top: '81%', left: '6%', content: 'This is point 3 - cool feature here!' },
-  { id: 4, top: '81%', left: '50%', content: 'This is point 4 - cool feature here!' },
-  { id: 5, top: '88%', left: '64%', content: 'This is point 5 - another nice thing.' },
+  { id: 1, top: '10%', left: '16%', content: 'Battery, 50km IDC on a single charge' },
+  { id: 2, top: '45%', left: '11%', content: 'Aircraft grade Aluminium body' },
+  { id: 3, top: '81%', left: '6%', content: 'Regenerative electronic braking' },
+  { id: 4, top: '81%', left: '50%', content: 'Triple Spring Suspension at front & Underbelly Double Spring Suspension at rear' },
+  { id: 5, top: '88%', left: '64%', content: 'Speed restricted to 25km/hr' },
 ];
 
 export default function UnfoldedScooterInfo() {
