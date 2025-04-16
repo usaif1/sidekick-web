@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Modal from "react-modal";
 import { useModalStore } from "../globalStore/modalStore";
 import PartnerForm from "./PartnerForm";
@@ -7,6 +8,18 @@ import DriversAndFleets from "./offeringModals/DriversAndFleets";
 
 const GlobalModal = () => {
   const { modalType, closeModal } = useModalStore();
+
+  useEffect(() => {
+    if (modalType !== null) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [modalType]);
 
   return (
     <Modal

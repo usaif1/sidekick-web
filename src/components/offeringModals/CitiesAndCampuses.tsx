@@ -7,8 +7,10 @@ import { useModalStore } from '../../globalStore/modalStore'
 const CitiesAndCampuses = ({ onClose }: { onClose: () => void }) => {
   const { openModal } = useModalStore();
   return (
-    <div className='p-5 flex items-stretch '>
-      <img src={modalImg} alt="Sidekick for Cities and Campuses" />
+    <div className='p-5 flex items-stretch max-w-[80vw] w-max max-h-[90vh]'>
+
+      <img src={modalImg} alt="Sidekick for Cities and Campuses" className='object-scale-down bg-[#45f469]' />
+
       <div className='grow flex flex-col'>
 
         {/* close button */}
@@ -19,7 +21,7 @@ const CitiesAndCampuses = ({ onClose }: { onClose: () => void }) => {
           <X size={24} weight="bold" />
         </button>
 
-        <div className='px-6 grow'>
+        <div className='px-6 max-w-md grow'>
           <h2 className="text-4xl font-bold text-center text-zinc-800 mb-2">Cities & Campuses</h2>
           <p className='text-sidekick-blue text-2xl rounded-lg px-7 font-semibold my-6 py-4 bg-[#F5F9FF]'>Your Last Mile, Our First Priority</p>
 
