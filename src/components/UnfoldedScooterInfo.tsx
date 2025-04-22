@@ -21,7 +21,7 @@ const points: Point[] = [
   { id: 2, top: '45%', left: '11%', content: 'Aircraft grade Aluminium body' },
   { id: 3, top: '81%', left: '6%', content: 'Regenerative electronic braking' },
   { id: 4, top: '81%', left: '50%', content: 'Triple Spring Suspension at front & Underbelly Double Spring Suspension at rear' },
-  { id: 5, top: '88%', left: '64%', content: 'Speed restricted to 25km/hr' },
+  { id: 5, top: '88%', left: '84%', content: 'Speed restricted to 25km/hr' },
 ];
 
 export default function UnfoldedScooterInfo() {
@@ -42,7 +42,11 @@ export default function UnfoldedScooterInfo() {
           {/* Dot and Tooltip Wrapper */}
           <div className="relative group">
             {/* Blue Point */}
-            <div className="w-5 h-5 bg-blue-600 rounded-full cursor-pointer transition-all duration-200 group-hover:scale-110 shadow-lg border-2 border-white" />
+            <div className="aspect-square w-8 h-8 flex items-center justify-center bg-sidekick-green rounded-full cursor-pointer transition-all duration-200 group-hover:scale-110 shadow-lg border-2 border-white" >
+              <p className="text-black font-bold text-sm p-4">
+                {point.id}
+              </p>
+            </div>
 
             {/* Tooltip - only shows when hovering over the dot */}
             <div className="absolute left-6 top-1/2 -translate-y-1/2 bg-sidekick-blue text-white font-medium px-3 py-3 rounded-xl text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 w-max max-w-xs pointer-events-none">

@@ -12,7 +12,7 @@ const Offerings = () => {
   const { openModal } = useModalStore();
 
   return (
-    <>
+    <div className="overflow-hidden">
       <div className="flex flex-col grow items-stretch justify-center min-h-svh">
         <div className="relative flex flex-col justify-center grow pt-20">
           {/* Background Image */}
@@ -84,7 +84,7 @@ const Offerings = () => {
       </section >
 
       <CTABanner />
-    </>
+    </div>
   )
 }
 

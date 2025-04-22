@@ -21,7 +21,7 @@ const InstitutionLogin = () => {
 
           {/* Overlay */}
           <div className="absolute top-0 left-0 h-full w-full bg-black/60 z-0"></div>
-          {/* =Foreground Image */}
+          {/* =Foreground Image */}''
           <img src={HeroForegroundImg} alt="Sidekick App Screenshot" className="h-[85vh] w-[55%] object-contain absolute object-bottom bottom-0 right-32" />
           {/* Text Content  + CTA */}
           <div className="space-y-12 relative max-w-7xl mx-auto md:w-[80vw] z-10">

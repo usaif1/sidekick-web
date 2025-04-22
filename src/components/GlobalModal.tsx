@@ -6,6 +6,7 @@ import CitiesAndCampuses from "./offeringModals/CitiesAndCampuses";
 import WarehousesAndIndustrialZones from "./offeringModals/WarehousesAndIndustrialZones";
 import DriversAndFleets from "./offeringModals/DriversAndFleets";
 
+
 const GlobalModal = () => {
   const { modalType, closeModal } = useModalStore();
 

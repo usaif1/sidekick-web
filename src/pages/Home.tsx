@@ -21,7 +21,7 @@ const Home = () => {
           <div className="absolute top-0 left-0 h-full w-full md:bg-black/30 bg-black/40  z-0"></div>
 
           {/* Text Content  + CTA */}
-          <div className="space-y-8 md:space-y-12 relative max-w-7xl mx-auto md:w-[80vw] z-10 pb-12 md:pb-0">
+          <div className="md:space-y-10 space-y-4 relative max-w-7xl mx-auto md:w-[80vw] z-10 pb-10 px-6 md:px-0">
             <p className="text-center mx-auto text-2xl font-bold md:mx-0 md:text-left md:text-5xl md:w-2/3 text-white md:font-semibold leading-snug drop-shadow-md">
               For all feet struggling,<br />
               we have a fleet to keep <br />
