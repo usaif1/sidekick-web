@@ -41,7 +41,9 @@ const Home = () => {
         </h3>
 
         <div className="relative w-max mx-auto">
-          <h2 className="text-center text-3xl md:text-4xl font-bold z-10">See Sidekick in Action</h2>
+          <h2 className="text-center text-3xl md:text-4xl font-bold z-10">
+            See Sidekick in Action
+          </h2>
           <img src={zigzagUnderline} alt="" aria-hidden className="relative select-none block ml-auto left-6 bottom-3" />
         </div>
 

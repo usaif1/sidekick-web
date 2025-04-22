@@ -10,8 +10,9 @@ import CTABanner from "../common/CTABanner"
 const InstitutionLogin = () => {
   return (
     <>
+      {/* Hero Section */}
       <div className="flex flex-col grow items-stretch justify-center min-h-svh">
-        <section className="relative flex flex-col justify-center grow pt-20">
+        <div className="relative flex flex-col justify-start md:justify-center grow pt-20">
           {/* Background Image */}
           <img
             src={Hero}
@@ -21,25 +22,27 @@ const InstitutionLogin = () => {
 
           {/* Overlay */}
           <div className="absolute top-0 left-0 h-full w-full bg-black/60 z-0"></div>
-          {/* =Foreground Image */}''
-          <img src={HeroForegroundImg} alt="Sidekick App Screenshot" className="h-[85vh] w-[55%] object-contain absolute object-bottom bottom-0 right-32" />
+          {/* =Foreground Image */}
+          <img src={HeroForegroundImg} alt="Sidekick App Screenshot" className="md:h-[85vh] md:w-[55%] object-contain absolute object-bottom bottom-0 md:right-32" />
+
           {/* Text Content  + CTA */}
-          <div className="space-y-12 relative max-w-7xl mx-auto md:w-[80vw] z-10">
-            <p className="text-5xl w-1/2 text-sidekick-green font-semibold leading-snug drop-shadow-md">
+          <div className="grow h-1/2 pt-[10vh] md:h-auto md:space-y-10 space-y-4 relative max-w-7xl mx-auto md:w-[80vw] z-10 pb-10 px-6 md:px-0">
+            <p className="text-center mx-auto text-2xl font-bold md:mx-0 md:text-left md:text-5xl md:w-2/3 text-white md:font-semibold leading-snug drop-shadow-md">
               Let us be your<br />
               Sidekick!
             </p>
-            <button className="font-medium text-lg bg-sidekick-green px-8 py-3 rounded-full">
+            <button className="font-medium text-lg md:bg-sidekick-green bg-white px-8 py-3 rounded-full">
               Institution Log In
             </button>
           </div>
-        </section>
+        </div>
+
         {/* Why partner with us? */}
       </div>
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto md:w-[80vw]">
-          <h2 className="text-4xl text-center font-semibold mt-10 mb-20">Why Partner With Us?</h2>
-          <div className="grid grid-cols-3">
+          <h2 className="md:text-4xl text-3xl text-center font-semibold mt-10 mb-20">Why Partner With Us?</h2>
+          <div className="md:grid md:grid-cols-3 space-y-12 md:space-y-0">
             {/* benefit */}
             <div className="text-center">
               <img src={benefit1} alt="SAAS" className="mx-auto mb-4" />
