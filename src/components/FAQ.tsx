@@ -37,7 +37,7 @@ const FAQ = () => {
 
   return (
     <section id="faq">
-      <div className="max-w-7xl w-[80vw] mx-auto py-12">
+      <div className="max-w-7xl md:w-[80vw] mx-auto py-12">
         <div className="relative w-max mx-auto mb-8">
           <h2 className="text-center text-4xl font-bold relative z-10">FAQS</h2>
         </div>

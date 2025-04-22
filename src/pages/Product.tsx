@@ -24,7 +24,7 @@ const Product = () => {
           <div className="absolute top-0 left-0 h-full w-full bg-black/30 z-0"></div>
 
           {/* Text Content + CTA */}
-          <div className="space-y-12 relative max-w-7xl mx-auto w-[80vw] z-10 pb-16">
+          <div className="space-y-12 relative max-w-7xl mx-auto md:w-[80vw] z-10 pb-16">
             <p className="text-5xl text-center mx-auto w-2/3 text-white font-semibold leading-snug drop-shadow-md">
               Built for the Streets,<br />
               the ride you always needed.
@@ -59,7 +59,7 @@ const Product = () => {
 
 
       {/* Upcoming products */}
-      <section className="max-w-7xl w-[80vw] mx-auto py-16 my-16">
+      <section className="max-w-7xl md:w-[80vw] mx-auto py-16 my-16">
         <h2 className="text-center text-4xl font-bold z-10 text-sidekick-blue">Upcoming Products</h2>
 
         <div className="flex items-center justify-center gap-10 my-8 py-6">

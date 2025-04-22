@@ -24,7 +24,7 @@ const InstitutionLogin = () => {
           {/* =Foreground Image */}
           <img src={HeroForegroundImg} alt="Sidekick App Screenshot" className="h-[85vh] w-[55%] object-contain absolute object-bottom bottom-0 right-32" />
           {/* Text Content  + CTA */}
-          <div className="space-y-12 relative max-w-7xl mx-auto w-[80vw] z-10">
+          <div className="space-y-12 relative max-w-7xl mx-auto md:w-[80vw] z-10">
             <p className="text-5xl w-1/2 text-sidekick-green font-semibold leading-snug drop-shadow-md">
               Let us be your<br />
               Sidekick!
@@ -37,7 +37,7 @@ const InstitutionLogin = () => {
         {/* Why partner with us? */}
       </div>
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto w-[80vw]">
+        <div className="max-w-7xl mx-auto md:w-[80vw]">
           <h2 className="text-4xl text-center font-semibold mt-10 mb-20">Why Partner With Us?</h2>
           <div className="grid grid-cols-3">
             {/* benefit */}

@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <>
       <div className="pt-20 bg-sidekick-green">
-        <div className="py-16 flex items-center justify-between max-w-7xl mx-auto w-[80vw]">
+        <div className="py-16 flex items-center justify-between max-w-7xl mx-auto md:w-[80vw]">
           <h2 className="text-6xl font-semibold text-gray-800 tracking-tight">Contact Us</h2>
           <ArrowDown size={36} className="text-white bg-sidekick-blue w-20 h-20 p-4 rounded-full" />
         </div>
@@ -58,7 +58,7 @@ const Contact = () => {
 
       {/* CTA SECTION */}
       <section className="bg-sidekick-green text-gray-900">
-        <div className="py-10 max-w-7xl mx-auto w-[80vw] flex items-center ">
+        <div className="py-10 max-w-7xl mx-auto md:w-[80vw] flex items-center ">
           <div className="space-y-2">
             <h6 className="text-xl font-semibold">
               Got an urgent issue?

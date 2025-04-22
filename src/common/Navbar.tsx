@@ -1,5 +1,6 @@
 import sidekickLogo from '../assets/sidekicklogo.svg';
 import sidekickLogoBlack from '../assets/sidekickLogoBlack.svg'
+import { List } from '@phosphor-icons/react';
 
 import { Link, useLocation } from 'react-router';
 
@@ -16,7 +17,7 @@ const Navbar = () => {
         <Link to="/">
           {isContactPage ? <img src={sidekickLogoBlack} alt="Sidekick Logo" /> : <img src={sidekickLogo} alt="Sidekick Logo" />}
         </Link>
-        <div className='space-x-8'>
+        <div className='space-x-8 hidden md:block'>
           <Link to='/product' className='font-semibold hover:underline'>Product</Link>
           <Link to='/offerings' className='font-semibold hover:underline'>Offerings</Link>
           <Link to='/contact' className='font-semibold hover:underline'>Contact Us</Link>
@@ -31,6 +32,9 @@ const Navbar = () => {
             Get the App
           </a>
         </div>
+        <button className='md:hidden'>
+          <List size={28} weight='bold' color={isContactPage ? '#2C2E49' : '#f5f5f5'} />
+        </button>
       </div>
     </nav>
   );

@@ -3,7 +3,7 @@ import { MagnifyingGlass } from "@phosphor-icons/react"
 const Map = () => {
   return (
     <section>
-      <div className="max-w-7xl w-[80vw] mx-auto py-16">
+      <div className="max-w-7xl md:w-[80vw] mx-auto py-16">
         <div className="relative">
           {/* replace below div with map element : ) */}
           <div className="bg-gray-300 rounded-xl h-120 my-16 mb-8"></div>

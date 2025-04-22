@@ -7,7 +7,7 @@ import { useModalStore } from '../../globalStore/modalStore'
 const WarehousesAndIndustrialZones = ({ onClose }: { onClose: () => void }) => {
   const { openModal } = useModalStore();
   return (
-    <div className='p-5 flex items-stretch max-w-[80vw] w-max max-h-[90vh]'>
+    <div className='p-5 flex items-stretch max-md:w-[80vw] w-max max-h-[90vh]'>
       <img src={modalImg} alt="Sidekick for Cities and Campuses" className='object-scale-down bg-[#45f469]' />
 
       <div className='grow flex flex-col'>

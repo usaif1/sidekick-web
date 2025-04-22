@@ -26,7 +26,7 @@ const Offerings = () => {
           <div className="absolute top-0 left-0 h-full w-full bg-black/30 z-0"></div>
 
           {/* Text Content + CTA*/}
-          <div className="space-y-12 relative max-w-7xl mx-auto w-[80vw] z-10">
+          <div className="space-y-12 relative max-w-7xl mx-auto md:w-[80vw] z-10">
             <p className="text-5xl w-2/3 text-white font-semibold leading-snug drop-shadow-md">
               Now we Go, because< br />
               every second counts.
