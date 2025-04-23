@@ -37,7 +37,7 @@ const Navbar = () => {
           <Link to='/login' className='font-semibold hover:underline'>Institution Login</Link>
           <a
             href="#"
-            className={`py-4 rounded-full font-semibold ${isContactPage
+            className={`py-4 px-5 rounded-full font-semibold ${isContactPage
               ? 'bg-white text-black'
               : 'bg-sidekick-green text-[#2C2E49]'
               }`}

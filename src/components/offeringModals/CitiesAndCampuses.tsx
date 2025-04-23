@@ -7,7 +7,7 @@ import { useModalStore } from '../../globalStore/modalStore'
 const CitiesAndCampuses = ({ onClose }: { onClose: () => void }) => {
   const { openModal } = useModalStore();
   return (
-    <div className='p-5 flex items-stretch max-md:w-[80vw] w-max max-h-[90vh]'>
+    <div className='md:p-5 md:flex md:items-stretch md:max-w-[80vw] md:w-max md:max-h-[90vh]'>
 
       <img src={modalImg} alt="Sidekick for Cities and Campuses" className='object-scale-down bg-[#45f469]' />
 

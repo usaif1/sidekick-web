@@ -26,7 +26,7 @@ const InstitutionLogin = () => {
           <img src={HeroForegroundImg} alt="Sidekick App Screenshot" className="md:h-[85vh] md:w-[55%] object-contain absolute object-bottom bottom-0 md:right-32" />
 
           {/* Text Content  + CTA */}
-          <div className="grow h-1/2 pt-[10vh] md:h-auto md:space-y-10 space-y-4 relative max-w-7xl mx-auto md:w-[80vw] z-10 pb-10 px-6 md:px-0">
+          <div className="grow h-1/2 pt-[10vh] md:pt-[25vh] md:h-auto md:space-y-10 space-y-4 relative max-w-7xl mx-auto md:w-[80vw] z-10 pb-10 px-6 md:px-0">
             <p className="text-center mx-auto text-2xl font-bold md:mx-0 md:text-left md:text-5xl md:w-2/3 text-white md:font-semibold leading-snug drop-shadow-md">
               Let us be your<br />
               Sidekick!

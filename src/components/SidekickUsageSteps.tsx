@@ -70,7 +70,7 @@ const SidekickUsageSteps = () => {
       )}
 
       {/* Navigation Buttons */}
-      <div className="absolute w-full  flex gap-4 justify-between mt-4 px-5 md:px-10 bottom-6 md:pb-4">
+      <div className="absolute w-full z-10 flex gap-4 justify-between mt-4 px-5 md:px-10 bottom-6 md:pb-4">
         <button ref={prevRef} className="cursor-pointer w-full flex items-center justify-center  max-w-3xs bg-sidekick-green py-3 border-2 rounded-lg border-white">
           <ArrowLeft size={24} />
         </button>

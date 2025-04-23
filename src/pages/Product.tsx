@@ -42,11 +42,11 @@ const Product = () => {
         </div>
 
         {/* Scooter Image */}
-        <div className="relative px-5 flex md:flex-row gap-6 md:gap-2 flex-col items-end justify-center">
-          <p className="hidden md:block text-gray-500 absolute w-full text-right top-10 right-56 select-none">Hover over parts the parts to check their details</p>
+        <div className="relative px-5 md:flex md:flex-row gap-6 md:gap-2 flex-col items-end justify-center">
+          <p className="hidden md:block text-gray-500 absolute w-full text-right top-0 right-14 select-none">Hover over parts the parts to check their details</p>
           <UnfoldedScooterInfo />
 
-          <div className="relative hidden md:block top-10 self-center pr-14 -ml-12">
+          <div className="relative hidden md:block top-10 self-center ">
             <svg width="68" height="45" viewBox="0 0 68 45" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.367 0L21.7357 9.42308L0.5 30.7821L11.6532 42L32.8889 20.641L53.5 0H12.367Z" fill="#86A0CA" />
               <path d="M55.613 45L46.2285 35.597L67.5 14.2836L56.328 3L35.0565 24.3134L14.5 45H55.613Z" fill="#86A0CA" />
