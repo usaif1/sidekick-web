@@ -26,7 +26,7 @@ const GlobalModal = () => {
     <Modal
       isOpen={modalType !== null}
       onRequestClose={closeModal}
-      className="absolute bg-white rounded-2xl mx-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-lg"
+      className="absolute min-w-[90vw] md:min-w-auto  bg-white rounded-2xl mx-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-lg"
       overlayClassName="fixed inset-0 bg-black/40 z-50 flex justify-center items-center"
     >
       {modalType === "partnerForm" && <PartnerForm onClose={closeModal} />}
