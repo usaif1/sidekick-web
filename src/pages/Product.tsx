@@ -25,11 +25,11 @@ const Product = () => {
 
           {/* Text Content + CTA */}
           <div className="md:space-y-10 space-y-4 relative max-w-7xl mx-auto md:w-[80vw] z-10 pb-10 px-6 md:px-0">
-            <p className="text-center mx-auto text-2xl font-bold md:mx-0 md:text-left md:text-5xl md:w-2/3 text-white md:font-semibold leading-snug drop-shadow-md">
+            <p className="text-center mx-auto text-2xl font-bold md:mx-auto md:text-center md:text-3xl md:font-normal md md:w-2/3 text-white leading-snug drop-shadow-md">
               Built for the Streets,<br />
               the ride you always <br className="md:hidden inline" /> needed.
             </p>
-            <a className="font-medium text-lg bg-sidekick-green px-6 py-3 block w-max rounded-full md:mx-0 mx-auto" href="#">
+            <a className="font-medium md:mx-auto text-lg bg-sidekick-green px-6 py-3 block w-max rounded-full mx-auto" href="#">
               Get the App
             </a>
           </div>

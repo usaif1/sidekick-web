@@ -19,7 +19,7 @@ export default function UnfoldedScooterInfo() {
   return (
     <>
       <div
-        className="relative py-5 px-4 rounded-2xl border-sidekick-blue border-2 mx-auto"
+        className="relative py-5 px-4 rounded-2xl border-sidekick-blue border-2 mx-auto md:w-min"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0H0V1H40V0Z' fill='%23E5E7EB'/%3E%3Cpath d='M40 39H0V40H40V39Z' fill='%23E5E7EB'/%3E%3Cpath d='M0 0V40H1V0H0Z' fill='%23E5E7EB'/%3E%3Cpath d='M39 0V40H40V0H39Z' fill='%23E5E7EB'/%3E%3C/svg%3E")`,
           backgroundSize: "10px 10px",
