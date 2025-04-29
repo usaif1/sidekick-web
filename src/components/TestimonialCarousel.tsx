@@ -15,14 +15,6 @@ const testimonials = [
     image: "/scooter.png",
     videoUrl: "#",
   },
-  {
-    name: "Ayesha",
-    company: "GreenGo Electric, Delhi",
-    quote:
-      "With Sidekick, our fleet management has become way more organized. It's a game changer for us.",
-    image: "/scooter.png",
-    videoUrl: "#",
-  },
 ];
 
 export default function TestimonialCarousel() {
