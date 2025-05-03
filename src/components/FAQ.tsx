@@ -37,33 +37,30 @@ const FAQ = () => {
 
   return (
     <section id="faq">
-      <div className="max-w-7xl w-[80vw] mx-auto py-12">
+      <div className="max-w-7xl md:w-[80vw] mx-auto py-12">
         <div className="relative w-max mx-auto mb-8">
-          <h2 className="text-center text-4xl font-bold relative z-10">FAQS</h2>
+          <h2 className="text-center md:text-4xl text-3xl font-bold relative z-10">FAQS</h2>
         </div>
 
         <div className="">
           {faqData.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <div key={index} className="py-2 overflow-hidden">
+              <div key={index} className="py-2 overflow-hidden px-6 md:px-0">
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center p-4 text-left cursor-pointer"
                 >
-                  <span className="text-xl font-semibold">{faq.question}</span>
+                  <span className="text-lg md:text-xl md:font-medium font-bold leading-tight">{faq.question}</span>
                   <ArrowDown
                     size={24}
-                    className={`transition-transform duration-300 ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
-
                 <div
-                  className={`px-4 overflow-hidden transition-all duration-400 ease-in-out ${
-                    isOpen ? "max-h-60 py-2" : "max-h-0"
-                  }`}
+                  className={`px-4 overflow-hidden transition-all duration-400 ease-in-out ${isOpen ? "max-h-60 py-2" : "max-h-0"
+                    }`}
                 >
                   <p className="text-gray-600">{faq.answer}</p>
                 </div>

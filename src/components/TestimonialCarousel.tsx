@@ -15,14 +15,6 @@ const testimonials = [
     image: "/scooter.png",
     videoUrl: "#",
   },
-  {
-    name: "Ayesha",
-    company: "GreenGo Electric, Delhi",
-    quote:
-      "With Sidekick, our fleet management has become way more organized. It's a game changer for us.",
-    image: "/scooter.png",
-    videoUrl: "#",
-  },
 ];
 
 export default function TestimonialCarousel() {
@@ -37,7 +29,7 @@ export default function TestimonialCarousel() {
 
   return (
     <section>
-      <div className="relative max-w-7xl mx-auto my-16 py-12">
+      <div className="relative max-w-7xl mx-auto md:my-16 md:py-12 py-6 my-6">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -56,12 +48,12 @@ export default function TestimonialCarousel() {
                   alt="testimonial"
                   className="w-full max-w-sm bg-gray-400 aspect-square rounded-lg object-cover"
                 />
-                <div className="flex-1 flex flex-col justify-between px-4 py-10 pr-10">
-                  <p className="text-4xl leading-tight text-gray-800">“{t.quote}”</p>
-                  <div className='flex items-end justify-between'>
+                <div className="flex-1 gap-2 flex flex-col justify-between px-4 py-10 pr-10">
+                  <p className="text-xl md:text-4xl leading-tight text-gray-800">“{t.quote}”</p>
+                  <div className='flex justify-between items-start gap-2 md:flex-row flex-col md:items-end md:justify-between '>
                     <div className='text-sidekick-blue'>
-                      <p className="font-semibold text-3xl">{t.name}</p>
-                      <p className="text-lg">{t.company}</p>
+                      <p className="font-semibold mdd:text-3xl text-xl">{t.name}</p>
+                      <p className="md:text-lg text-base mb-2">{t.company}</p>
                     </div>
                     <a
                       href={t.videoUrl}
@@ -77,13 +69,13 @@ export default function TestimonialCarousel() {
         </Swiper>
 
         {/* Navigation arrows (wired up now) */}
-        <div className='flex items-center justify-between w-full py-6 mt-4'>
+        <div className='flex items-center justify-between w-full md:py-6 py-4 md:mt-4'>
           <div className="">
             <button
               className="bg-sidekick-green p-4 rounded-xl"
               onClick={() => swiperRef.current?.slidePrev()}
             >
-              <ArrowLeft size={24} className='text-black font-bold' />
+              <ArrowLeft size={24} fontWeight={900} className='text-black font-bold' />
             </button>
           </div>
           <div className="">
@@ -91,7 +83,7 @@ export default function TestimonialCarousel() {
               className="bg-sidekick-green p-4 rounded-xl"
               onClick={() => swiperRef.current?.slideNext()}
             >
-              <ArrowRight size={24} className='text-black font-bold' />
+              <ArrowRight size={24} fontWeight={900} className='text-black font-bold' />
             </button>
           </div>
         </div>
