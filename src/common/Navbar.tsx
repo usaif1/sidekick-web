@@ -1,14 +1,11 @@
 import { useEffect, useState } from 'react';
 import sidekickLogo from '../assets/sidekicklogo.svg';
-import sidekickLogoBlack from '../assets/sidekickLogoBlack.svg';
+import { Link } from 'react-router';
 import { List, X } from '@phosphor-icons/react';
-import { Link, useLocation } from 'react-router';
 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
-  const isContactPage = location.pathname === '/contact';
   useEffect(() => {
     if (menuOpen) {
       document.body.classList.add("overflow-hidden");
@@ -21,12 +18,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${isContactPage ? 'bg-sidekick-green text-black' : 'bg-sidekick-black text-[#f5f5f5]'
-        } py-7 md:absolute fixed top-0 left-0 w-full h-fit z-20`}
+      className={`${'bg-sidekick-black text-[#f5f5f5]'
+        } py-5 md:absolute fixed top-0 left-0 w-full h-fit z-20`}
     >
       <div className='flex items-center justify-between md:w-[80%] px-5 md:px-0 max-w-7xl mx-auto'>
         <Link to="/">
-          {isContactPage ? <img src={sidekickLogoBlack} alt="Sidekick Logo" /> : <img src={sidekickLogo} alt="Sidekick Logo" />}
+          <img src={sidekickLogo} alt="Sidekick Logo" />
         </Link>
 
         {/* Desktop Menu */}
@@ -37,10 +34,7 @@ const Navbar = () => {
           <Link to='/login' className='font-semibold hover:underline'>Institution Login</Link>
           <a
             href="#"
-            className={`py-4 px-5 rounded-full font-semibold ${isContactPage
-              ? 'bg-white text-black'
-              : 'bg-sidekick-green text-[#2C2E49]'
-              }`}
+            className='py-4 px-5 rounded-full font-semibold bg-white text-black'
           >
             Get the App
           </a>
@@ -48,14 +42,14 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button className='md:hidden' onClick={toggleMenu}>
-          <List size={28} weight='bold' color={isContactPage ? '#2C2E49' : '#f5f5f5'} />
+          <List size={28} weight='bold' color={'#f5f5f5'} />
         </button>
       </div>
 
       {/* Mobile Full-Screen Menu */}
       {menuOpen && (
         <menu className={`fixed top-0 left-0 w-full h-screen z-20 flex flex-col items-center justify-start gap-8 transition bg-sidekick-green text-black `}>
-          <div className=' py-7 bg-sidekick-black w-full'>
+          <div className=' py-5 bg-sidekick-black w-full'>
             <div className='flex items-center justify-between md:w-[80%] px-5 md:px-0 max-w-7xl mx-auto'>
               <Link onClick={toggleMenu} to="/">
                 <img src={sidekickLogo} alt="Sidekick Logo" />
